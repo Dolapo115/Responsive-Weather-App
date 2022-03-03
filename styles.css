@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(2, 2, 49);/*linear-gradient( rgba(0, 89, 255, 0.5), rgba(0, 255, 221, 0.5)); */
+    font-family: sans-serif;
+}
+
+.location{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(82, 1, 82);
+    width: 40%;
+    height: 20vh;
+}
+
+.timezone{
+    width: 70%;
+    /* border: 2px solid white; */
+    font-size: 40px;
+
+}
+
+.city{
+    /* width: 70%; */
+    font-size: 50px;
+}
+
+.country{
+    /* width: 70%; */
+    font-size: 50px;
+}
+
+.icon{
+    width: 30%;
+    /* border: 2px solid white; */
+    text-align: center;
+}
+
+.temperature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    width: 50%;
+    height: 30vh;
+}
+
+.temperature-span{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    /* border: 2px solid black; */
+
+}
+
+.temperature-span > h2{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.temperature-span > span{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+.description{
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: white;
+}
+
+.circles{
+    position: absolute;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: -10;
+    background: none;
+}
+
+#circle1{
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 300px;
+}
+#circle2{
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    left: 300px;
+}
+#circle3{
+    width: 180px;
+    height: 180px;
+    top: 100px;
+    right: 100px;
+}
+#circle4{
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    left: 80px;
+}
+#circle5{
+    width: 250px;
+    height: 250px;
+    bottom: 400px;
+    left: 180px;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+    
+    body{
+        width: 100vw;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(2, 2, 49);/*linear-gradient( rgba(0, 89, 255, 0.5), rgba(0, 255, 221, 0.5));*/
+        font-family: sans-serif;
+        padding-top: 20vh;
+    }
+    
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 2px solid rgb(82, 1, 82);
+        width: 80%;
+        height: 30vh;
+        margin-bottom: 15vh;
+    }
+    
+    .timezone{
+        width: 80%;
+        /* border: 2px solid white; */
+        font-size: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .city{
+        /* width: 70%; */
+        font-size: 50px;
+    }
+    
+    .country{
+        /* width: 70%; */
+        font-size: 50px;
+    }
+    
+    .icon{
+        width: 25%;
+        /* border: 2px solid white; */
+        text-align: center;
+    }
+    
+    .temperature{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        /* border: 2px solid white; */
+        width: 50%;
+        height: 30vh;
+    }
+    
+    .temperature-span{
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+        /* border: 2px solid black; */
+    
+    }
+    
+    .temperature-span > h2{
+        margin-left: 10px;
+        font-weight: bolder;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .temperature-span > span{
+        margin-left: 10px;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .description{
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+
+    .circles{
+        position: absolute;
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        z-index: -10;
+        background: none;
+    }
+    
+    #circle1{
+        width: 300px;
+        height: 300px;
+        top: 10px;
+        left: 30px;
+    }
+    #circle2{
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        left: 30px;
+    }
+    #circle3{
+        width: 180px;
+        height: 180px;
+        top: 100px;
+        right: 10px;
+    }
+    #circle4{
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        left: 80px;
+    }
+    #circle5{
+        width: 250px;
+        height: 250px;
+        bottom: 40px;
+        left: 180px;
+    }
+}
